@@ -54,8 +54,4 @@ jobs:
 
       - name: Run scripts
         run: |
-          ls -lsa
-          ls script/
-          for file in script/*; do
-            forge script $file -vvvv
-          done
+          forge script script/Deploy.s.sol  -vvvv --tc Deploy
